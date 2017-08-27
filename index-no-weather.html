@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Time and date -->
+    <span class="clock" id="clock"></span>
+    <h1 id="date"></h1>
+    <!-- /time and date -->
+    <br>
+    <div class="grid">
+        <div class="col">
+            <h3>Learning</h3>
+            <ul id="fav-left">
+                <li>
+                    <a href="https://www.coursera.org/learn/learning-how-to-learn">Learning How to Learn - Coursera</a>
+                    <button
+                        class="removebtn">x</button>
+                </li>
+            </ul>
+            <div id="new-link-button-l">
+                <button class="button">Add link</button>
+            </div>
+            <div id="add-link-form-l">
+                <label>Title</label><br /><input id="title-l" placeholder="Title here" /><br /><label>URL</label><br /><input
+                    id="url-l" value="http://" /><br /><button class="button" id="add-left">Save Link</button>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Code</h3>
+            <ul id="fav-center">
+                <li>
+                    <a href="https://cmdchallenge.com/">Commandline Challenge</a><button class="removebtn">x</button>
+                </li>
+            </ul>
+            <div id="new-link-button-c">
+                <button class="button">Add link</button>
+            </div>
+            <div id="add-link-form-c">
+                <label>Title</label><br /><input id="title-c" placeholder="Title here" /><br /><label>URL</label><br /><input
+                    id="url-c" value="http://" /><br /><button class="button" id="add-center">Save Link</button>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Everything else</h3>
+            <ul id="fav-right">
+                <li>
+                    <a href="https://news.ycombinator.com/">Hacker News</a><button class="removebtn">x</button>
+                </li>
+            </ul>
+            <div id="new-link-button-r">
+                <button class="button">Add link</button>
+            </div>
+            <div id="add-link-form-r">
+                <label>Title</label><br /><input id="title-r" placeholder="Title here" /><br /><label>URL</label><br /><input
+                    id="url-r" value="http://" /><br /><button class="button" id="add-right">Save Link</button>
+            </div>
+        </div>
+
+        <!-- Code for date and time -->
+        <script>
+            var clockElement = document.getElementById("clock");
+
+            function updateClock(clock) {
+                clock.innerHTML = new Date().toTimeString().split(" ")[0];
+            }
+            setInterval(function () {
+                updateClock(clockElement);
+            }, 1000);
+
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay()];
+            var yyyy = today.getFullYear();
+
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+
+            today = dd + '.' + mm + '.' + yyyy;
+
+            date.innerHTML = n + "<br>" + today;
+        </script>
+        <!-- Dependency -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Scripts to add links - it can be easier, yes-->
+        <script src="scripts/script-left.js"></script>
+        <script src="scripts/script-right.js"></script>
+        <script src="scripts/script-center.js"></script>
+
+</body>
+
+</html>
