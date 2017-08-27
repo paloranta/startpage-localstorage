@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(to bottom right, #99CC66, #669933);
+    background: linear-gradient(to right, #99CC66, #669933);
     width: 100%;
     height: 100%;
 }
@@ -43,6 +43,14 @@ a {
 
 a:hover {
     text-decoration: underline
+}
+
+.weather {
+    width:60%;
+    margin-left: auto;
+    margin-right:auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%)
 }
 
 .clock{
