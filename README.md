@@ -13,3 +13,4 @@ https://paloranta.github.io/startpage-localstorage/
 - Weather widget is from https://weatherwidget.io/
   - edit index.html under "<!-- Weather from weatherwidget.io.." to change location or to remove the widget.
 - Link saving functionality to local storage: https://codepen.io/4gray/pen/glGun
+- Using [Jquery](https://jquery.com/)
