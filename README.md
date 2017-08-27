@@ -4,6 +4,8 @@ A responsive startpage using local storage to store user added links. Huge clock
 Made as a learning experience to learn html, css and javascript better. </br></br>
 Demo here:
 https://paloranta.github.io/startpage-localstorage/
+Version without weather:
+https://paloranta.github.io/startpage-localstorage/index-no-weather.html
 
 ![screenshot][screenshot]
 
