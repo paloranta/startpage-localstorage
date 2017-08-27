@@ -1,0 +1,125 @@
+html {
+    background: linear-gradient(to bottom right, #99CC66, #669933);
+    width: 100%;
+    height: 100%;
+}
+
+body {    
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;           
+    text-align: center;        
+    color: #fff;
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    line-height: 1.5;
+    padding: 2em;
+}
+
+h1,h2,h3,h4,h5,h6,a {    
+    line-height: 1.2;    
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.441em
+}
+
+h2 {
+    font-size: 2em
+}
+
+h3 {
+    font-size: 1.25em
+}
+
+a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.clock{
+    line-height: 1.2;    
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    font-size: 12vw
+}
+
+label, input,{
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+}
+
+.button {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em 1em;
+    color: #fff !important; 
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;       
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6c3;
+    border: 0 !important;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px 0px rgba(0,0,0,0.2);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.col {
+    flex: 1;    
+}
+
+  @media screen and (max-width:600px) {
+    .grid {
+        display: block;
+    } 
+    .col {        
+        width: 100%;
+    }
+}
+
+ul li {        
+    list-style:none;
+    margin-left: -1.5em;
+  }
+  
+  .removebtn { 
+    border:none;
+    background: none;
+    color: #fff;
+  }
+  
+  .removebtn:hover {
+    opacity: 0.7;
+  }
+  
+  #add-link-form-l,  #add-link-form-c, #add-link-form-r{
+    display:none;
+    background: #444;
+    padding:20px;
+    color: #ccc;
+    box-shadow: 0 5px 12px 0px rgba(0,0,0,0.2);
+    border-radius: 1em;
+  }
+  
+  #add-link-form-l #add-link-form-c #add-link-form-r input {
+    margin: 5px 0;
+    width:250px;
+    color: #333;
+    padding:5px;
+    outline:none;
+    border:none;
+  }  
+  
